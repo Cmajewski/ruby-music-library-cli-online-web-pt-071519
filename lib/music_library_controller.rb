@@ -30,7 +30,7 @@ class MusicLibraryController
     case user_input
     when "list songs"
       self.list_songs
-    when "list_artists"
+    when "list artists"
       self.list_artists
     when "exit"
       "exit"
