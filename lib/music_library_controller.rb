@@ -1,5 +1,5 @@
 class MusicLibraryController
-  attr_reader :path, :list_songs
+  attr_reader :path
   def initialize (path='./db/mp3s')
     new_importer=MusicImporter.new(path)
     new_importer.import
@@ -28,6 +28,8 @@ class MusicLibraryController
     puts "What would you like to do?"
     user_input=gets.chomp
     case user_input
+    when "list songs"
+      self.list_songs
     when "exit"
       "exit"
     else
