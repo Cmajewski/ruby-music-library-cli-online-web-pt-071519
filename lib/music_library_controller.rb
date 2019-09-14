@@ -34,6 +34,8 @@ class MusicLibraryController
       self.list_artists
     when "list genres"
       self.list_genres
+    when "list artist"
+      self.list_songs_by_artist
     when "exit"
       "exit"
     else
